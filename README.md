@@ -13,8 +13,8 @@ Additional options:
 
 ## Installation ##
 1.  Upload wp-block-spammers to the /wp-content/plugins/ directory
-2.  Activate the plugin through the \'Plugins\' menu in WordPress
-3.  Check and configure the plugin settings through the \'Block Spammers\' menu in WordPress settings
+2.  Activate the plugin through the 'Plugins' menu in WordPress
+3.  Check and configure the plugin settings through the 'Block Spammers' menu in WordPress settings
 
 ## License ##
 [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/legalcode)
