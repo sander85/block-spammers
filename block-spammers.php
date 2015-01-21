@@ -1,7 +1,7 @@
 <?php
 /**
 Plugin Name: Block Spammers
-Plugin URI: https://github.com/sander85/wp-block-spammers
+Plugin URI: https://github.com/sander85/block-spammers
 Description: Block spammers from submitting comments, by IPs or by bad words.
 Author: Sander Lepik
 Version: 0.1
@@ -103,6 +103,6 @@ function wbs_process_comment($commentdata)
 	return $commentdata;
 }
 
-include 'wp-block-spammers-admin.php';
+include 'block-spammers-admin.php';
 
 ?>

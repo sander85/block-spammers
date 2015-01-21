@@ -12,7 +12,7 @@ Additional options:
 *   When deleting spam, add IPs of spam comments into the blacklist.
 
 ## Installation ##
-1.  Upload wp-block-spammers to the /wp-content/plugins/ directory
+1.  Upload block-spammers to the /wp-content/plugins/ directory
 2.  Activate the plugin through the 'Plugins' menu in WordPress
 3.  Check and configure the plugin settings through the 'Block Spammers' menu in WordPress settings
 
