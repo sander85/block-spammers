@@ -41,10 +41,21 @@ class WBSSettings
 		// Set class property
 		$this->options = get_option('wbs_options');
 		$this->blacklisted_words = get_option('blacklist_keys');
+
+		// Blocked comments info
+		if(isset($this->options['blocked_comments_count']))
+		{
+			$blocked_comments_count = $this->options['blocked_comments_count'];
+		}
+		else
+		{
+			$blocked_comments_count = 0;
+		}
 		?>
 		<div class="wrap">
 			<?php screen_icon(); ?>
 			<h2><?php echo __('Block Spammers', 'wbs'); ?></h2>
+			<p><?php printf(__('The number of comments this plugin has blocked: <strong>%s</strong>', 'wbs'), $blocked_comments_count); ?></p>
 			<form method="post" action="options.php">
 			<?php
 				// Hidden settings

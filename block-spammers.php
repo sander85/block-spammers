@@ -4,7 +4,7 @@ Plugin Name: Block Spammers
 Plugin URI: https://github.com/sander85/block-spammers
 Description: Block spammers from submitting comments, by IPs or by bad words.
 Author: Sander Lepik
-Version: 0.2
+Version: 0.3
 Text Domain: wbs
 Domain Path: /languages/
 Author URI: https://sander85.eu
@@ -104,6 +104,17 @@ function wbs_process_comment($commentdata)
 			{
 				// Get the message
 				$message = isset($wbs_options['wbs-message-to-spammers']) ? $wbs_options['wbs-message-to-spammers'] : __('You are banned from commenting!', 'wbs');
+
+				// Increase blocked comments count
+				if(isset($wbs_options['blocked_comments_count']))
+				{
+					$wbs_options['blocked_comments_count']++;
+				}
+				else
+				{
+					$wbs_options['blocked_comments_count'] = 1;
+				}
+				update_option('wbs_options', $wbs_options);
 
 				wp_die($message);
 			}

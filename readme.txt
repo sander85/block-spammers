@@ -27,6 +27,8 @@ Additional options:
 3. Check and configure the plugin settings through the \'Block Spammers\' menu in WordPress settings
 
 == Changelog ==
+= 0.3 =
+* Add counter for blocked comments
 = 0.2 =
 * Enable translations
 * Add Estonian translation
