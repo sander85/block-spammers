@@ -31,6 +31,7 @@ Additional options:
 = 0.3 =
 * Add counter for blocked comments
 * Add option to merge similar entries in the blacklist
+
 = 0.2 =
 * Enable translations
 * Add Estonian translation
