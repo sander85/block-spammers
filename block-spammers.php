@@ -91,6 +91,11 @@ function wbs_process_comment($commentdata)
 					$manually_added_ips = array_map('trim', explode("\n", $wbs_options['wbs-manual-blocking-textarea']));
 					$manually_added_ips[] = wbs_get_ip_address();
 					$manually_added_ips = array_unique($manually_added_ips);
+					// Merge similar IPs if requested
+					if(isset($wbs_options['wbs-merge-ips-checkbox']))
+					{
+						$manually_added_ips = WBSSettings::wbs_merge_ips($manually_added_ips, $wbs_options['wbs-merge-ips-count'], $wbs_options['wbs-merge-ips-octets']);
+					}
 					natsort($manually_added_ips);
 					$wbs_options['wbs-manual-blocking-textarea'] = implode("\n", $manually_added_ips);
 					update_option('wbs_options', $wbs_options);
