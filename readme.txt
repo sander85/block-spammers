@@ -2,7 +2,7 @@
 Contributors: sander85
 Tags: spam, comments, blocking, ip
 Requires at least: 3.5.1
-Tested up to: 4.8
+Tested up to: 5.0
 Stable tag: trunk
 License: CC0
 License URI: http://creativecommons.org/publicdomain/zero/1.0/legalcode
